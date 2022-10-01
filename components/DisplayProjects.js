@@ -8,24 +8,23 @@ const DisplayProjects = () => {
         {id:3, title: 'TypeScript Redux CRUD', type:'TypeScript & Redux Toolkit', img: '', link: 'https://github.com/Eve-Drake/Typescript-Redux-CRUD'},
         {id:4, title: 'Random User Generator', type:'JavaScript', img: '', link: 'https://github.com/Eve-Drake/Random-User-Generator'},
         {id:5, title: 'Bootstrap Placeholder Reviews', type:'JavaScript & Bootstrap', img: '', link: 'https://github.com/Eve-Drake/Bootstrap-Placeholder-Reviews'},
-        {id:6, title: 'Data Visulisation', type:'JavaScript & ReCharts', img: '', link: 'https://github.com/Eve-Drake/Data-Visulisation'},
+        {id:6, title: 'Data Visulisation with ReCharts', type:'JavaScript & ReCharts', img: '', link: 'https://github.com/Eve-Drake/Data-Visulisation'},
         {id:7, title: 'JavaScript Simple Todo', type:'JavaScript & API Calls', img: '', link: 'https://github.com/Eve-Drake/Simple-Todo'},
     ]
   return (
-    <div>
+    <div className='grid md:grid-cols-4 gap-4 p-10'>
         {projectArray.map((project)=>(
             <div key={project.id}>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src='../public/ProjectImages/DataVis.jpg' alt="Project Image" />
-                    <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        <h3><a href={project.link}>{project.title}</a></h3>
+                <div className="max-w-sm rounded  shadow-md hover:shadow-xl">
+                    <img className="w-full" src='../public/ProjectImages/DataVis.jpg' alt="Project Image" />
+                    <div className="px-6 py-4 h-500 min-h-full">
+                        <div className="font-bold text-xl mb-2 ">
+                            <h3 className='text-center'><a href={project.link}>{project.title}</a></h3>
+                        </div>
                     </div>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-LIGHT rounded-full px-3 py-1 text-sm font-semibold text-DARK-700 mr-2 mb-2">{project.type}</span>
-                    
-                </div>
+                    <div class=" px-6 pt-4 pb-2 ">
+                        <span class=" bg-LIGHT rounded-full px-3 py-1 text-sm font-semibold text-DARK-700 mr-2 mb-2">{project.type}</span>
+                    </div>
                 </div>
             </div>
 
