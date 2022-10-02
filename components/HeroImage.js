@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const HeroImage = () => {
   return (
-    <div className='w-full h-screen bg-gradient-to-b from-LIGHT to-GREY'>
+    <div className='w-full h-screen bg-gradient-to-b from-LIGHT to-GREY' id='top'>
       <div className=' w-full h-full mx-auto p-2 flex justify-center items-center text-center'>
             <div className='text-DARK'>
                 <img className='mx-auto' src='https://www.svgrepo.com/show/250452/coding-html.svg' width={150} height={150} alt='Code symbol with lines'/> 
