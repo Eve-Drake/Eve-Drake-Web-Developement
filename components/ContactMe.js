@@ -81,7 +81,7 @@ const ContactMe = () => {
             value={toSend.message} 
             className="bg-LIGHT-50 border border--300 text-DARK text-sm rounded-lg focus:ring-ORANGE focus:border-ORANGE block w-full p-2.5 dark:bg-gray-700 dark:border-GREY-600 dark:text-LIGHT dark:focus:ring-ORANGE dark:focus:border-ORANGE"
             onChange={handleChange}/>
-          <button type='submit' disabled={!showSent} className='my-2 text-white bg-ORANGE hover:bg-BLUE focus:ring-4 focus:outline-none focus:ring-BLUE font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-BLUE dark:hover:bg-BLUE-700 dark:focus:ring-blue-800"'>Sent</button>
+          <button type='submit' className='my-2 text-white bg-ORANGE hover:bg-BLUE focus:ring-4 focus:outline-none focus:ring-BLUE font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-BLUE dark:hover:bg-BLUE-700 dark:focus:ring-blue-800"'>Sent</button>
         </form>
       </div>
 
