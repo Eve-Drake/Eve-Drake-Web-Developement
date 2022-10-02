@@ -45,7 +45,7 @@ const About = () => {
                </article> 
             </div> 
             <div className='col-span-2'>
-                <Image className='mx-auto' src='/../public/CodeThink.png' width={650} height={650} alt='Code symbol with lines'/> 
+                <Image className='mx-auto' src='https://www.svgrepo.com/show/224781/coding.svg' width={650} height={650} alt='Code symbol on monitor'/> 
             </div>
         </div>
         
